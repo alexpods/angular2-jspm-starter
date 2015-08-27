@@ -4,5 +4,25 @@
   "description": "Skeleton for typical angular2 web application",
   "license": "MIT",
   "author": "Aleksey Podskrebyshev <alexpods>",
-  "repository": "https://github.com/alexpods/angular2-seed"
+  "repository": "https://github.com/alexpods/angular2-seed",
+  "scripts": {
+    "jspm": "jspm",
+    "server": "http-server ./client"
+  },
+  "dependencies": {
+    "jspm": "^0.16.1"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "client"
+    },
+    "dependencies": {
+      "angular2": "npm:angular2@^2.0.0-alpha.35",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.0",
+      "zone.js": "npm:zone.js@^0.5.3"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.0-dev.20150818"
+    }
+  }
 }
