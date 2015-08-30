@@ -7,10 +7,15 @@
   "repository": "https://github.com/alexpods/angular2-seed",
   "scripts": {
     "jspm": "jspm",
-    "server": "http-server ./client"
+    "build": "jspm bundle boot.js client/bundle.js",
+    "start": "node ./server/boot.js"
   },
   "dependencies": {
-    "jspm": "^0.16.1"
+    "express": "^4.13.3",
+    "serve-static": "^1.10.0"
+  },
+  "devDependencies": {
+    "jspm": "^0.16.2"
   },
   "jspm": {
     "directories": {

@@ -1,7 +1,7 @@
-import app from 'app';
-import http from 'http';
+var app  = require('./app');
+var http = require('http');
 
-const server = http.createServer(app);
+var server = http.createServer(app);
 
 server.on('error', onError);
 
